@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.ProfessorMainFunctionController">
+   <children>
+      <VBox layoutX="140.0" layoutY="95.0">
+         <children>
+            <Button fx:id="Button_ImportCSV" layoutX="210.0" layoutY="105.0" mnemonicParsing="false" onAction="#importCSVAction" prefHeight="76.0" prefWidth="320.0" text="Import CSV File" />
+            <Button fx:id="Button_GetStudPer" layoutX="214.0" layoutY="210.0" mnemonicParsing="false" onAction="#getStudPerAction" prefHeight="112.0" prefWidth="320.0" text="Get Reports of students Performance" />
+         </children>
+      </VBox>
+      <Button fx:id="Button_Back_ProfessorMainFun" layoutY="1.0" mnemonicParsing="false" onAction="#backAction" text="Back" />
+   </children>
+</AnchorPane>

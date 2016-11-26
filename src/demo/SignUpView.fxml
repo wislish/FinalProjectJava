@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.SignUpController">
+   <children>
+      <VBox layoutX="162.0" layoutY="84.0">
+         <children>
+            <VBox layoutX="172.0" layoutY="84.0" prefHeight="162.0" prefWidth="214.0">
+               <children>
+                  <Label text="User ID">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="Textfield_UserID_SignUp" />
+                  <Label text="Password">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="Textfield_Password_SignUp" />
+                  <Label text="Confirm Password">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="Textfield_ConfirmPassword">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox layoutX="162.0" layoutY="272.0">
+               <children>
+                  <Label fx:id="Label_ErrorMessage_SignUp" layoutX="162.0" layoutY="272.0" prefHeight="17.0" prefWidth="28.0" text="  " />
+                  <HBox layoutX="162.0" layoutY="312.0" spacing="100.0">
+                     <children>
+                        <Button fx:id="Button_Reset_SignUp" layoutX="208.0" layoutY="269.0" mnemonicParsing="false" onAction="#Reset_SignUpAction" prefHeight="27.0" prefWidth="67.0" text="Reset" />
+                        <Button fx:id="Button_Submit_SignUp" layoutX="347.0" layoutY="269.0" mnemonicParsing="false" onAction="#submit_SignUpAction" text="Sumbit" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Button fx:id="Button_Back_SignUp" layoutY="1.0" mnemonicParsing="false" onAction="#backAction" text="Back" />
+   </children>
+</AnchorPane>
